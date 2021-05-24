@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Job Application form</h1>
+    <div>
+      <form>
+        <div class="input-group">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="John Doe" />
+        </div>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="johndoe@gmail.com"
+          />
+        </div>
+        <div class="input-group">
+          <label for="gyear">Year of graduation</label>
+          <input type="Number" name="gyear" id="gyear" />
+        </div>
+        <div class="input-group">
+          <label for="work">WHY DO YOU WANT TO WORK WITH US?</label>
+          <textarea name="work" id="work"></textarea>
+        </div>
+        <div class="input-group">
+          <label for="exp"
+            >DO YOU HAVE ANY RELEVANT EXPERIENCE? IF YES, PLEASE DESCRIBE
+            IT-</label
+          >
+          <textarea name="exp" id="exp"></textarea>
+        </div>
+        <div class="input-group">
+          <label for="department">Department</label>
+          <select name="department" id="department">
+            <option value="" selected="">Select a department</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Sales">Sales</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Administration">Administration</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
